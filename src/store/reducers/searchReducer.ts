@@ -11,7 +11,7 @@ const initialState = {
 export const searchReducer = (state: IState = initialState, action: setSearchAction) => {
     switch (action.type) {
         case 'setSearch':
-            return { ...state, term: action.payload }
+            return { ...state, search: action.payload }
         default:
             return state
     }

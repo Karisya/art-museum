@@ -12,12 +12,8 @@ const Search = () => {
     const term = useSelector(state => state.term.term)
     const works = useSelector(state => state.works.works)
 
-    // const [search, setSearch] = useState(false)
-
     const handleChange = (e) => {
-
         dispatch(setTerm(e.target.value))
-
     }
 
     const handleSubmit = async (term) => {
@@ -30,7 +26,6 @@ const Search = () => {
             const data = await response.json();
             dispatch(setWorks(data.data));
             dispatch(setSearch(true))
-            console.log('data', data.data)
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -41,7 +36,7 @@ const Search = () => {
 
         e.preventDefault()
         handleSubmit(term)
-
+        dispatch(setSearch(true))
     }
 
     return (

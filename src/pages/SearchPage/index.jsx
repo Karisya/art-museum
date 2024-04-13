@@ -1,12 +1,18 @@
 import { useDispatch, useSelector } from "react-redux"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import Item from "../../components/Item"
 import Search from "../../components/Search"
-import { setWorkInfo } from "../../store/actions-creators/workInfoActions"
+import { setArtworkData } from "../../store/actions-creators/actworkDataActions"
+import { setIsLoading } from "../../store/actions-creators/isLoadingActions"
+
 const SearchPage = () => {
-    const dispatch = useDispatch();
+
+    const dispatch = useDispatch()
+
+    const search = useSelector(state => state.search.search)
     const works = useSelector(state => state.works.works);
-    const [arr, setArr] = useState([]);
+    const artworkData = useSelector(state => state.data.data)
+    const isLoading = useSelector(state => state.isLoading.isLoading)
 
     useEffect(() => {
         const fetchWorkInfo = async () => {
@@ -20,23 +26,36 @@ const SearchPage = () => {
                     const data = await response.json();
                     newData.push(data.data);
                 }
-                setArr(newData);
+                dispatch(setArtworkData(newData));
+                dispatch(setIsLoading(false));
             } catch (error) {
                 console.error('Error fetching work info:', error);
             }
         };
 
-        fetchWorkInfo();
+        if (works.length > 0) {
+            fetchWorkInfo();
+        }
     }, [works]);
 
     return (
         <>
             <Search />
-            {arr.map((itemData, index) => (
-                <Item key={index} item={itemData} />
-            ))}
+            {search &&
+                (<div>
+                    {isLoading ? (
+                        <p>Loading...</p>
+                    ) : (
+                        artworkData.map((itemData, index) => (
+                            <Item key={index} item={itemData} />
+                        ))
+                    )}
+                </div>)
+            }
+
+
         </>
     );
-}
+};
 
 export default SearchPage;

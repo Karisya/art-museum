@@ -1,16 +1,18 @@
 // import { createStore } from "redux";
-import { applyMiddleware,combineReducers, createStore } from "redux"
+import { applyMiddleware, combineReducers, createStore } from "redux"
 import { termReducer } from "./reducers/termReducer"
 import { worksReducer } from "./reducers/worksReducer";
 import { thunk } from "redux-thunk";
 import { searchReducer } from "./reducers/searchReducer";
-import { workInfoReducer } from "./reducers/workInfoReducer";
+import { artworkDataReducer } from "./reducers/artworkDataReducer";
+import { isLoadingReducer } from "./reducers/isLoadingReducer";
 
 const reducers = combineReducers({
     term: termReducer,
     works: worksReducer,
     search: searchReducer,
-    info: workInfoReducer,
+    data: artworkDataReducer,
+    isLoading: isLoadingReducer,
 })
 
 const store = createStore(
