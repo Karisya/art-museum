@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/art-museum/static/css/main.f855e6bc.css",
-    "main.js": "/art-museum/static/js/main.7c702b91.js",
-    "static/js/453.bb44b0ab.chunk.js": "/art-museum/static/js/453.bb44b0ab.chunk.js",
-    "static/media/LexendDeca-Regular.ttf": "/art-museum/static/media/LexendDeca-Regular.e54bba3389cd248f39e1.ttf",
-    "static/media/logo2.svg": "/art-museum/static/media/logo2.11db8805192537cb3a05a8d4e0645295.svg",
-    "static/media/logo.svg": "/art-museum/static/media/logo.03bb23793435a369cd6998e45362c2a3.svg",
-    "static/media/modsen.svg": "/art-museum/static/media/modsen.1de6d5f25ef22dbb8765c67d78870156.svg",
-    "static/media/sort.svg": "/art-museum/static/media/sort.fe4e4f17d226830f97d17728813afc55.svg",
-    "index.html": "/art-museum/index.html",
-    "static/media/favorites.svg": "/art-museum/static/media/favorites.0ce17377cc359b5699aec48d37a6a322.svg",
-    "static/media/home.svg": "/art-museum/static/media/home.4cec3c29111b655bcb6e08629b5ab72b.svg",
-    "static/media/icon.svg": "/art-museum/static/media/icon.893674e81c645a59cd7a17c3d8756d80.svg",
-    "static/media/search.svg": "/art-museum/static/media/search.a5267a6f380f65e182ff602098fbaaf7.svg",
-    "static/media/bookmark.svg": "/art-museum/static/media/bookmark.0bbf8e39b69e82b05684c23f093def4f.svg",
-    "static/media/arrow.svg": "/art-museum/static/media/arrow.a17ba7c8040b774509efb35dd67ed510.svg",
-    "main.f855e6bc.css.map": "/art-museum/static/css/main.f855e6bc.css.map",
-    "main.7c702b91.js.map": "/art-museum/static/js/main.7c702b91.js.map",
-    "453.bb44b0ab.chunk.js.map": "/art-museum/static/js/453.bb44b0ab.chunk.js.map"
+    "main.css": "/art-museum%20/static/css/main.f855e6bc.css",
+    "main.js": "/art-museum%20/static/js/main.0e92b2e3.js",
+    "static/js/453.bb44b0ab.chunk.js": "/art-museum%20/static/js/453.bb44b0ab.chunk.js",
+    "static/media/LexendDeca-Regular.ttf": "/art-museum%20/static/media/LexendDeca-Regular.e54bba3389cd248f39e1.ttf",
+    "static/media/logo2.svg": "/art-museum%20/static/media/logo2.11db8805192537cb3a05a8d4e0645295.svg",
+    "static/media/logo.svg": "/art-museum%20/static/media/logo.03bb23793435a369cd6998e45362c2a3.svg",
+    "static/media/modsen.svg": "/art-museum%20/static/media/modsen.1de6d5f25ef22dbb8765c67d78870156.svg",
+    "static/media/sort.svg": "/art-museum%20/static/media/sort.fe4e4f17d226830f97d17728813afc55.svg",
+    "index.html": "/art-museum%20/index.html",
+    "static/media/favorites.svg": "/art-museum%20/static/media/favorites.0ce17377cc359b5699aec48d37a6a322.svg",
+    "static/media/home.svg": "/art-museum%20/static/media/home.4cec3c29111b655bcb6e08629b5ab72b.svg",
+    "static/media/icon.svg": "/art-museum%20/static/media/icon.893674e81c645a59cd7a17c3d8756d80.svg",
+    "static/media/search.svg": "/art-museum%20/static/media/search.a5267a6f380f65e182ff602098fbaaf7.svg",
+    "static/media/bookmark.svg": "/art-museum%20/static/media/bookmark.0bbf8e39b69e82b05684c23f093def4f.svg",
+    "static/media/arrow.svg": "/art-museum%20/static/media/arrow.a17ba7c8040b774509efb35dd67ed510.svg",
+    "main.f855e6bc.css.map": "/art-museum%20/static/css/main.f855e6bc.css.map",
+    "main.0e92b2e3.js.map": "/art-museum%20/static/js/main.0e92b2e3.js.map",
+    "453.bb44b0ab.chunk.js.map": "/art-museum%20/static/js/453.bb44b0ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.7c702b91.js"
+    "static/js/main.0e92b2e3.js"
   ]
 }
