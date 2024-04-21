@@ -1,14 +1,19 @@
-import React from 'react';
-// import logo from './logo.svg';
 import './App.css';
-import SearchPage from './pages/SearchPage';
-import AllWorks from './pages/allWorks';
+import Header from './components/Header';
+import { GlobalStyles } from './GlobalStyled';
+import { BrowserRouter } from 'react-router-dom';
+import MainRoute from './constants/routes/mainRoute';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-      <AllWorks />
-    </>
+    <GlobalStyles>
+      <BrowserRouter >
+        <Header />
+        <MainRoute />
+        <Footer />
+      </BrowserRouter >
+    </GlobalStyles>
   );
 }
 

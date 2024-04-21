@@ -1,17 +1,17 @@
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
-import Item from "../../components/Item"
-import Search from "../../components/Search"
 import { setArtworkData } from "../../store/actions-creators/actworkDataActions"
 import { setIsLoading } from "../../store/actions-creators/isLoadingActions"
+import { Content, Note, Title } from "./styled"
+import SearchResults from "../SearchResults"
+import AllResults from "../AllResults"
 
-const SearchPage = () => {
+const Artworks = () => {
 
     const dispatch = useDispatch()
 
     const search = useSelector(state => state.search.search)
     const works = useSelector(state => state.works.works);
-    const artworkData = useSelector(state => state.data.data)
     const isLoading = useSelector(state => state.isLoading.isLoading)
 
     useEffect(() => {
@@ -38,24 +38,32 @@ const SearchPage = () => {
         }
     }, [works]);
 
+
     return (
         <>
-            <Search />
-            {search &&
-                (<div>
-                    {isLoading ? (
-                        <p>Loading...</p>
-                    ) : (
-                        artworkData.map((itemData, index) => (
-                            <Item key={index} item={itemData} />
-                        ))
-                    )}
-                </div>)
-            }
+            <Content>
+                <Note>Topics for you</Note>
+                <Title>Our special gallery</Title>
+                {search ?
+                    (
+                        <div>
+                            {isLoading ? (
+                                <p>Loading...</p>
+                            ) : (
+                                <SearchResults />
+                            )}
+                        </div >)
+                    :
 
+                    (<div>
+                        <AllResults />
+                    </div>)
+
+                }
+            </Content >
 
         </>
     );
 };
 
-export default SearchPage;
+export default Artworks;

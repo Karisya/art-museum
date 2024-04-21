@@ -2,7 +2,9 @@
   "name": "art-museam",
   "version": "1",
   "private": true,
+  "homepage": "https://karisya.github.io/art-museum/",
   "dependencies": {
+    "@babel/preset-typescript": "^7.24.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -11,19 +13,25 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "eslint": "^9.0.0",
+    "formik": "^2.4.5",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.0",
+    "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "redux": "^5.0.1",
     "redux-thunk": "^3.1.0",
     "styled-components": "^6.1.8",
     "typescript": "^5.4.5",
-    "web-vitals": "^2.1.0"
+    "web-vitals": "^2.1.0",
+    "yup": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install"

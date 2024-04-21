@@ -1,0 +1,3 @@
+Lexend is a collection of [seven font families](https://fonts.google.com/?query=lexend) intended to improve reading proficiency. As prescription eyeglasses achieve proficiency for persons with short-sightedness, Lexend's families were developed using [Shaver-Troup Formulations](http://lexend.com).
+
+To contribute, see [github.com/ThomasJockin/lexend](https://github.com/ThomasJockin/lexend). For more information, see [thomasjockin.github.io/lexend](https://thomasjockin.github.io/lexend/)
