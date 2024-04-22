@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/art-museum/static/css/main.f855e6bc.css",
-    "main.js": "/art-museum/static/js/main.faaafa00.js",
+    "main.js": "/art-museum/static/js/main.878daa33.js",
     "static/js/453.bb44b0ab.chunk.js": "/art-museum/static/js/453.bb44b0ab.chunk.js",
     "static/media/LexendDeca-Regular.ttf": "/art-museum/static/media/LexendDeca-Regular.e54bba3389cd248f39e1.ttf",
     "static/media/logo2.svg": "/art-museum/static/media/logo2.11db8805192537cb3a05a8d4e0645295.svg",
@@ -16,11 +16,11 @@
     "static/media/bookmark.svg": "/art-museum/static/media/bookmark.0bbf8e39b69e82b05684c23f093def4f.svg",
     "static/media/arrow.svg": "/art-museum/static/media/arrow.a17ba7c8040b774509efb35dd67ed510.svg",
     "main.f855e6bc.css.map": "/art-museum/static/css/main.f855e6bc.css.map",
-    "main.faaafa00.js.map": "/art-museum/static/js/main.faaafa00.js.map",
+    "main.878daa33.js.map": "/art-museum/static/js/main.878daa33.js.map",
     "453.bb44b0ab.chunk.js.map": "/art-museum/static/js/453.bb44b0ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.faaafa00.js"
+    "static/js/main.878daa33.js"
   ]
 }
